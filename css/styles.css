@@ -1,0 +1,38 @@
+body {
+  background-color: #f8f8f8;
+  font-family: Arial, sans-serif;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: center;
+  list-style: none;
+  padding: 20px;
+}
+
+.gallery-item {
+  transition: transform 0.3s;
+}
+
+.gallery-item:hover {
+  transform: scale(1.05);
+}
+
+.gallery-image {
+  width: 250px;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.basicLightbox--visible img {
+  max-width: 80vw;
+  max-height: 80vh;
+}
+
+.my-custom-class .basicLightbox__placeholder {
+  background-color: rgba(46, 47, 66, 0.8);
+}
